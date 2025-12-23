@@ -1,0 +1,186 @@
+body{
+    font-weight: bold;
+    color: rgba(10, 10, 10, 0.945);
+}
+.hero{
+    height: 700px;
+    background:
+    linear-gradient(
+        to right,
+        rgba(255,255,255,0.9),
+        rgba(255,255,255,0.6),
+        rgba(255, 255, 255, 0)),
+        url(https://i.pinimg.com/736x/7f/83/9d/7f839d7c39da9b46a8a1fd135ea014f8.jpg) ;
+        background-size: cover;
+        background-position: center;
+}
+.hero-text{
+    padding: 100px;
+}
+.hero-text h1{
+font-size: 50px;
+}
+.hero-text p{
+font-size: 30px;
+}
+.hero-text button{
+font-size: 30px;
+padding: 5px;
+border-radius: 6px;
+font-weight: bold;
+color: rgba(10, 10, 10, 0.945);
+background-color: rgb(41, 168, 168);
+
+}
+.color{
+ color: rgb(41, 168, 168);  
+}
+header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(41, 168, 168);
+    font-weight: bold;
+    font-size: 20px;
+    height: 50px;
+}
+nav{display: flex;
+   align-items: center;
+}
+li{
+    padding: 10px;
+}
+#nav-bar{
+    display: flex;
+    list-style: none;
+    
+}
+#logo-image{
+    height: 50px;
+    width: auto;
+    margin-right: 400px;
+}
+.home{
+    background-color: rgb(41, 168, 168);
+    border-radius: 6px;
+}
+.service-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 40px;
+    gap: 100px;
+  
+
+}
+.service-card{
+      background-color: white;
+     padding: 40px;
+     border: 2px solid rgba(43, 41, 41, 0.568);
+
+
+     
+
+}
+.service-card i {
+    color:rgb(41, 168, 168);
+    font-size: 40px;
+    margin: 20px; 
+}
+.services h2 {
+    font-size: 30px;
+    margin-top: 60px;
+    margin-left: 60px;  
+    
+}
+.address{
+    display: flex;
+    align-items: center;
+}
+.service-card p{
+    color: rgba(43, 41, 41, 0.568);
+}
+.footer i{
+    color:rgb(41, 168, 168) ;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color:rgba(43, 41, 41, 0.568) ;
+    border-top:2px solid rgb(41, 168, 168)  ;
+   }
+   .about-doctor{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-top: 30px;
+    font-size: 20px;
+   }
+   
+   .about-doctor h2{
+    font-size: 30px;
+    margin-top: 60px;
+    
+
+   }
+   .about-doctor img{
+    height: 500px;
+    width: 500px;
+   
+   }
+   @media (max-width:768px){
+    nav{
+        flex-direction: column;
+    }
+    #logo-image{
+        margin-right: 0;
+    }
+    .hero-text{
+        padding:20px;
+    
+    }
+    .hero-text h1{
+    font-size : 30px;
+     }
+     .hero-text p{
+     font-size: 15px;
+     }
+     .hero-text button{
+     font-size: 15px;
+     padding: 2px;
+   }
+   .hero{
+    height: 200px;}
+    .service-cards{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .service-card i {
+    font-size:20px;
+    margin: 5px; 
+}
+.services h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;  
+    
+}
+.about-doctor{
+    flex-direction: column;
+    margin: 5px;
+    font-size: 15px;
+}
+.about-doctor h2{
+    font-size: 20px;
+    margin-top: 20px;
+    
+
+   }
+.about-doctor img{
+    height: 60px;;
+    width: auto;
+   
+   }
+}
+   
+   

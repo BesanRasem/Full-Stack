@@ -18,12 +18,12 @@ li{
     padding: 100px;
 
 }
-.grid{
+.page{
 
 display: grid;
 
-grid-template-columns: 500px 1fr 500px;
+grid-template-columns: 1fr 1fr 1fr;
 
-grid-template-rows: 500 1fr 500;
+grid-template-rows: 1fr 1fr 1fr;
 
 }
