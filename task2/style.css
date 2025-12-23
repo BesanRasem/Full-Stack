@@ -129,6 +129,16 @@ footer{
    
    }
    @media (max-width:768px){
+    header{
+     font-size: 10x;
+    height: 70px;
+    margin-bottom: 2px;
+     }
+     li{
+        padding: 2px;
+     }
+
+    
     nav{
         flex-direction: column;
     }
@@ -136,7 +146,7 @@ footer{
         margin-right: 0;
     }
     .hero-text{
-        padding:20px;
+        padding:5px;
     
     }
     .hero-text h1{
@@ -177,10 +187,12 @@ footer{
 
    }
 .about-doctor img{
-    height: 60px;;
-    width: auto;
+    height: 300px;;
+    width: 200x;
+    margin-right: 20px;
    
    }
+   
 }
    
    
