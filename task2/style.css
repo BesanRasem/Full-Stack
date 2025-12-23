@@ -40,7 +40,7 @@ header{
     align-items: center;
     border-bottom: 1px solid rgb(41, 168, 168);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     height: 50px;
 }
 nav{display: flex;
@@ -130,7 +130,7 @@ footer{
    }
    @media (max-width:768px){
     header{
-     font-size: 10x;
+    font-size: 10px;
     height: 70px;
     margin-bottom: 2px;
      }
