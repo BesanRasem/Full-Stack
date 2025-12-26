@@ -14,22 +14,45 @@ body{
         background-size: cover;
         background-position: center;
 }
+
+
+
 .hero-text{
     padding: 100px;
+    
+
+
 }
 .hero-text h1{
 font-size: 50px;
+
 }
 .hero-text p{
 font-size: 30px;
 }
 .hero-text button{
 font-size: 30px;
-padding: 5px;
-border-radius: 6px;
+padding: 10px;
+border-radius: 10px;
 font-weight: bold;
+ background: linear-gradient(to right,
+  rgb(41, 168, 168),
+  rgb(74 226 226), 
+  rgb(41, 168, 168));
+border: 2px solid rgb(41, 168, 168) ;
+transition: all 0.5s ease;
+
+
+
 color: rgba(10, 10, 10, 0.945);
-background-color: rgb(41, 168, 168);
+box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+
+
+
+}
+.hero-text button:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
 
 }
 .color{
@@ -48,6 +71,12 @@ nav{display: flex;
 }
 li{
     padding: 10px;
+}
+header li:hover{
+    cursor: pointer;
+}
+header li:active{
+    background-color:rgb(41, 168, 168) ;
 }
 #nav-bar{
     display: flex;
@@ -76,10 +105,21 @@ li{
       background-color: white;
      padding: 40px;
      border: 2px solid rgba(43, 41, 41, 0.568);
-
-
-     
-
+     transition: all 0.5s ease;
+    
+}
+.service-card:hover{
+    transform: translateY(-5px);
+     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.service-card span{
+margin-top: 30px;
+ color:rgb(41, 168, 168) ;
+}
+.service-card span:hover{
+ text-decoration: underline;
+ text-decoration-color:rgb(41, 168, 168) ;
+  cursor: pointer;  
 }
 .service-card i {
     color:rgb(41, 168, 168);
@@ -92,6 +132,7 @@ li{
     margin-left: 60px;  
     
 }
+
 .address{
     display: flex;
     align-items: center;
@@ -128,11 +169,79 @@ footer{
     width: 500px;
    
    }
+     @media (max-width:920px){
+    header{
+    height: 70px;
+    margin-bottom: 2px;
+     }
+     li{
+        padding: 2px;
+     }
+     .service-card span:hover{
+     text-decoration: none;
+     cursor: default;  
+     }
+     
+    #logo-image{
+        margin-right: 0;
+    }
+    .hero-text{
+        padding: 10px;
+    }
+    .hero-text button{
+        transition: none;
+    }
+    header li:hover{
+    cursor: default;
+    }
+    .service-card:hover{
+    transform:none;
+    }
+   .hero{
+    height: 400px;}
+    .service-cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 20px;
+    }
+    .service-card i {
+    font-size:20px;
+    margin: 5px; 
+}
+.services h2 {
+    margin-top: 20px;
+    margin-left: 20px;  
+    
+}
+.hero-text button:hover{
+    transform: none;
+    cursor: default;
+
+}
+
+.about-doctor img{
+    height: 400px;;
+    width: 400px;
+  
+   
+   }
+   .service-card{
+    padding: 10px;
+    transition:none;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+   }
+   
+}
    @media (max-width:768px){
     header{
     font-size: 10px;
     height: 70px;
     margin-bottom: 2px;
+     }
+     .hero-text button:hover{
+    transform: none;
+    cursor: default;
+
      }
      li{
         padding: 2px;
@@ -146,8 +255,14 @@ footer{
         margin-right: 0;
     }
     .hero-text{
-        padding:5px;
+        padding:1px;
     
+    }
+    .service-card:hover{
+    transform:none;
+    }
+    header li:hover{
+    cursor: default;
     }
     .hero-text h1{
     font-size : 30px;
@@ -157,7 +272,9 @@ footer{
      }
      .hero-text button{
      font-size: 15px;
-     padding: 2px;
+     padding: 5px;
+     transition: none;
+
    }
    .hero{
     height: 200px;}
@@ -188,11 +305,18 @@ footer{
    }
 .about-doctor img{
     height: 300px;;
-    width: 200x;
+    width: 200px;
     margin-right: 20px;
    
    }
-   
+   .service-card span:hover{
+     text-decoration: none;
+     cursor: default;  
+     }
+   .service-card{
+    transition: none;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+   }
 }
-   
+
    
