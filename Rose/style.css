@@ -1,0 +1,52 @@
+body{
+    font-weight: bold;
+    color: rgba(10, 10, 10, 0.945);
+}
+
+header{
+    border-bottom: 1px solid rgb(245, 150, 209);
+    font-weight: bold;
+    font-size: 30px;
+}
+nav{display: flex;
+   align-items: center;
+   margin-right: 200px;
+}
+li{
+  padding: 6px; 
+
+}
+#nav-bar{
+    display: flex;
+    list-style: none;
+    
+}
+.hero{
+    height: 700px;
+    background:
+    linear-gradient(
+        to right,
+        rgba(255,255,255,0.9),
+        rgba(255,255,255,0.6),
+        rgba(255, 255, 255, 0)),
+        url(https://i.pinimg.com/736x/7d/a5/df/7da5dfb6ff34907f64c18d4fe2187373.jpg) ;
+        background-size: cover;
+        background-position: center;
+}
+.hero-text{
+    padding: 100px;
+    
+
+
+}
+.hero-text h1{
+font-size: 50px;
+
+}
+.hero-text p{
+font-size: 30px;
+}
+span{
+    color: rgb(245, 150, 209);
+}
+
