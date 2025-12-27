@@ -9,15 +9,18 @@ header{
     font-size: 30px;
     height: 80px;
 }
-header li:hover{
+.a:hover{
     cursor: pointer;
 }
-header li:active{
+.a:active{
     background-color:rgb(245, 150, 209) ;
 }
 nav{display: flex;
    align-items: center;
    margin-right: 500px;
+}
+.a{
+    font-size: 20px;
 }
 li{
   padding: 5px; 
@@ -98,6 +101,9 @@ span{
     transform: translateY(-5px);
      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
+.rose{
+    margin-right: 200px;
+}
  @media (max-width:920px){
   header{
     font-size: 20px;
@@ -121,8 +127,8 @@ font-size: 50px;
 }
 .hero-text p{
 font-size: 30px;
-}
-.rose{
+} 
+.logo{
     margin-right:400px;
 }
  }
