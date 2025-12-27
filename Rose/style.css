@@ -28,6 +28,13 @@ li{
     list-style: none;
     
 }
+#nav-bar a {
+  text-decoration: none;
+  color: rgba(10, 10, 10, 0.9);
+  padding: 10px ;
+  
+}
+
 .hero{
     height: 700px;
     background:
