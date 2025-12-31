@@ -1,0 +1,167 @@
+/* Header */
+.header {
+  @include flex(row, space-between, center, $space-2);
+  padding: $space-2 $space-3;
+  background: $color-white;
+  border-bottom: 1px solid $color-border;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  /* Mobile: stack */
+ 
+
+
+
+}
+
+.logo {
+  font-family: $font-heading;
+  letter-spacing: 0.5px;
+}
+
+/* Hero */
+.hero {
+  padding: $space-5 0;
+  background: 
+        url(https://i.pinimg.com/736x/d6/8c/f1/d68cf103ceb65e5e0560eb5b35c83268.jpg);
+   background-size: cover;
+  background-position: center;
+  color: $color-primary;
+  animation: fadeIn 0.6s ease;
+  min-height:90vh;
+  button{
+    background-color: $color-secondary;
+    color: $color-primary;
+    font-weight: bold;
+  }
+    @include respond-max($bp-tablet) {
+      min-height: 70vh;
+}
+  
+}
+
+.hero__grid {
+  display: grid;
+  gap: $space-2;
+
+  @include respond-min($bp-tablet) {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+  }
+}
+
+.hero__title {
+  font-family: $font-heading;
+  font-size: 2rem;
+  margin-top: 100px;
+  span{
+    font-size: 60px;
+  }
+
+  @include respond-max($bp-tablet) {
+    font-size: 40px;
+  
+  span{
+      font-size: 40px;
+
+  }}
+  @include respond-max($bd-phone){
+   font-size: 30px;
+
+  
+   span{
+    font-size: 30px;
+  }}
+}
+
+.hero__desc {
+  margin-top: $space-2;
+  line-height: 1.8;
+  max-width: 55ch;
+  font-weight: bold;
+  @include respond-max($bp-tablet){
+   font-size: 35px;
+  }
+   @include respond-max($bd-phone){
+   font-size: 20px;
+  }
+}
+
+.hero__actions {
+  margin-top: $space-3;
+  @include flex(row, flex-start, center, $space-2);
+  flex-wrap: wrap;
+}
+
+.hero__card {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: $radius;
+  padding: $space-3;
+
+  h3 {
+    font-family: $font-heading;
+    margin-bottom: $space-2;
+  }
+}
+.icon{
+  @include flex(row, flex-start, center, $space-2);
+}
+
+/* Features */
+.features {
+  padding: $space-5 0;
+}
+
+.features__grid {
+  display: grid;
+  gap: $space-3;
+
+  @include respond-min($bp-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-min($bp-desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* CTA */
+.cta {
+  padding: $space-5 0;
+}
+
+.cta__box {
+  background: $color-white;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  padding: $space-4;
+  @include flex(row, space-between, center, $space-3);
+  flex-wrap: wrap;
+}
+
+/* Footer */
+.footer {
+  background: $color-primary;
+  color: $color-white;
+  padding: $space-4 0;
+}
+
+.footer__grid {
+  display: grid;
+  gap: $space-3;
+
+  @include respond-min($bp-tablet) {
+    grid-template-columns: 1.2fr 0.8fr 1fr;
+    align-items: start;
+  }
+}
+
+.footer__links {
+  @include flex(column, flex-start, flex-start, $space-1);
+}
+
+.logo--footer {
+  margin-bottom: $space-1;
+}
