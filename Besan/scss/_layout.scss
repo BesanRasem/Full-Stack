@@ -81,9 +81,11 @@ body{
 width: 100%;}
 .navbar-brand{
     font-weight: bold;
-    color:$color-primary ;
+    color:$color-text ;
     pointer-events: none;
     margin-right: 500px;
+    font-family: 'Baloo 2', cursive;
+
 
 }
 .custom-navbar .nav-link {
@@ -131,5 +133,8 @@ width: 100%;}
     }
 }
 .brand-name{
-    color: $color-primary;
+    color: $color-text;
+}
+.nav-item{
+padding: 5px;
 }

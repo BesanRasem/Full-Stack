@@ -80,9 +80,10 @@ body {
 
 .navbar-brand {
   font-weight: bold;
-  color: #fab433;
+  color: rgb(167, 48, 236);
   pointer-events: none;
   margin-right: 500px;
+  font-family: "Baloo 2", cursive;
 }
 
 .custom-navbar .nav-link {
@@ -131,7 +132,11 @@ body {
 }
 
 .brand-name {
-  color: #fab433;
+  color: rgb(167, 48, 236);
+}
+
+.nav-item {
+  padding: 5px;
 }
 
 @media (max-width: 900px) {
