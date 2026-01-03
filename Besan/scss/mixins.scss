@@ -1,0 +1,58 @@
+
+@media(max-width:900px){
+    .hero{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .hero .text-hero h1{
+        font-size: 35px;
+     }
+     .hero .text-hero p{
+    font-size: 20px;
+    max-width: 300px;
+     }
+     .hero img{
+    max-width: 350px;
+    margin-right: 5px;
+     }
+     .navbar-brand{
+    margin-right: 50px;
+}
+.about{
+    flex-wrap: wrap;
+}
+.card-body{
+    padding: 5px;
+}
+}
+@media(max-width:768px){
+    .hero{
+       display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    .text-hero{
+        margin: 5px;
+        max-width: 350px;
+    
+    h1{
+        font-size: 30px;
+     }
+     p{
+    font-size: 15px;
+     }
+    }
+img{
+    max-width:300px;
+    margin-right: 5px;
+}}
+.navbar-brand{
+    margin-right: 50px;
+}
+.about{
+    flex-wrap: wrap;
+}
+
+
+}
